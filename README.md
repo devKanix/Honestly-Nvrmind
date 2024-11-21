@@ -41,9 +41,5 @@ Step 3:- `npm start` for start the React application. <br></br>
 - The frontend client is located in `./client` which is coupled with the backend.
 - All the backend routers go to `./routes` folder.  
 
-## Contributor
-
-<img src="https://contributors-img.web.app/image?repo=devkanix/Honestly-Nvrmind"/>
-
 
 ## Thank you for visiting.

@@ -55,9 +55,12 @@
             },
             "name" : "FABRIC 1_FRONT_4193",
             "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 0
-                },
+                "baseColorFactor" : [
+                    0.8196079730987549,
+                    0.8196079730987549,
+                    0.8196079730987549,
+                    1
+                ],
                 "metallicFactor" : 0,
                 "roughnessFactor" : 0.8212287425994873
             }
@@ -77,19 +80,6 @@
                     "material" : 0
                 }
             ]
-        }
-    ],
-    "textures" : [
-        {
-            "sampler" : 0,
-            "source" : 0
-        }
-    ],
-    "images" : [
-        {
-            "mimeType" : "image/png",
-            "name" : "mockup 1",
-            "uri" : "mockup%201.png"
         }
     ],
     "accessors" : [
@@ -152,14 +142,6 @@
             "byteLength" : 4479360,
             "byteOffset" : 6387200,
             "target" : 34963
-        }
-    ],
-    "samplers" : [
-        {
-            "magFilter" : 9729,
-            "minFilter" : 9987,
-            "wrapS" : 33071,
-            "wrapT" : 33071
         }
     ],
     "buffers" : [
