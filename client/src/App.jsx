@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -9,15 +10,22 @@ import SignIN from "./components/SignIN";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Hero />
-      <HNStrip />
-      <NewArrivals />
-      <Creativity />
-      <Footer />
-      <SignIN />
-    </div>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Hero />
+            <HNStrip />
+            <NewArrivals />
+            <Creativity />
+            <Footer />
+          </>
+        } />
+        <Route path="/signin" element={<SignIN />} />
+        {/* <Route path="/signup" element={<SignUp />} /> */}
+      </Routes>
+    </Router>
   );
 }
 
