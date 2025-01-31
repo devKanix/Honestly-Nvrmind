@@ -5,6 +5,7 @@ import HNStrip from "./components/HNStrip";
 import Footer from "./components/Footer";
 import NewArrivals from "./components/NewArrivals";
 import Creativity from "./components/Creativity";
+import SignIN from "./components/SignIN";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <NewArrivals />
       <Creativity />
       <Footer />
+      <SignIN />
     </div>
   );
 }
