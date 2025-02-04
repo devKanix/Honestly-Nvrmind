@@ -1,4 +1,4 @@
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import HNStrip from "./components/HNStrip";
@@ -9,16 +9,24 @@ import SignIN from "./components/SignIN";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <HNStrip />
-      <NewArrivals />
-      <Creativity />
-      <Footer />
-      <SignIN />
-    </div>
+    <Router>
+      
+      <Routes>
+        <Route path="/" element={
+          <>
+          <Navbar />
+            <Hero />
+            <HNStrip />
+            <NewArrivals />
+            <Creativity />
+            <Footer />
+          </>
+        } />
+        <Route path="/signin" element={<SignIN />} />
+        {/* <Route path="/signup" element={<SignUp />} /> */}
+      </Routes>
+    </Router>
   );
 }
 
-export default App;
+export default App;
