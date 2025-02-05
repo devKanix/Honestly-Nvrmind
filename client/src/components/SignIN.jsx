@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SignIN = () => {
   const [formData, setFormData] = useState({
@@ -80,12 +81,12 @@ const SignIN = () => {
                 >
                   Sign In
                 </button>
-                <a
-                  href="/forgot-password"
-                  className="text-sm text-black duration-200 hover:text-blue-700 "
-                >
+                <Link to="/forgot-password" className="text-sm text-black duration-200 hover:text-blue-700 " >
                   Forgot Password?
-                </a>
+                </Link>
+                <Link to="/signup" className="text-sm text-black duration-200 hover:text-blue-700 " >
+                  Create new account?
+                </Link>
               </form>
             </div>
           </div>
