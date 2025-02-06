@@ -1,4 +1,5 @@
-import TshirtCanvas from "./canvas/Tshirt";
+import { TshirtCanvas } from "./canvas/Tshirt";
+import {Link} from 'react-router-dom';
 
 const Creativity = () => {
   return (
@@ -11,14 +12,13 @@ const Creativity = () => {
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black ">
           SALE NOW
         </h1>
-        <p className="text-dullBalck font-poppins leading-normal text-white">
-          Spend minimal RS 1000 get 15% off in
+        <p className="w-80 mt-2 text-dullBalck font-poppins leading-normal text-black">
+          Spend minimal RS 1000 get 15% off in your order
         </p>
-        <p className="text-dullBalck font-poppins leading-normal text-white">your order</p>
-
-        <button className="bg-black w-36 sm:w-60 md:w-72 lg:w-80 h-14 font-semibold text-white mt-6 rounded-lg  transition-bg transition-text duration-200 hover:bg-yellow-300 hover:text-black">
+        <Link to="/products"><button className="bg-black w-36 sm:w-60 md:w-72 lg:w-80 h-14 font-semibold text-white mt-6 rounded-lg  transition-bg transition-text duration-200 hover:bg-customGray hover:text-black">
           SHOP NOW
         </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
@@ -10,15 +9,13 @@ const SignUp = () => {
         <div className="flex h-[500px] bg-yellow-400 rounded-full">
           <div className="w-[500px] h-full rounded-full bg-white flex flex-col items-center justify-center">
             <h1 className="text-4xl font-bold text-black">
-              <a href="/">
-                <span className="text-yellow-500">Honestly</span>
-                <span className="text-purple-500">-</span>Nvrmind
-              </a>
+              <Link to="/">Honestly-Nvrmind
+              </Link>
             </h1>
             <p className="w-[90%] mt-5 font-Dancing">
               Glitch through reality, step into the future — where every 3D drop
               hits like a beat, every product drips like anime aesthetics.{" "}
-              <span className="text-purple-500">Honestly-Nvrmind</span> isn’t
+              <span className="text-blue-500">Honestly-Nvrmind</span> isn’t
               just a shop, it’s a whole new dimension.
             </p>
           </div>
