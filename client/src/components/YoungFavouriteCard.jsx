@@ -1,12 +1,13 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-const NewArrivalCard = ({ photo, description }) => {
+
+const YoungFavouriteCard = ({ photo, description }) => {
   return (
-    <div className="font-poppins">
+<div className="font-poppins">
       <div>
         <img
           src={photo}
           alt="product"
-          className="object-cover w-[400px] h-[550px] rounded-[20px]"
+          className="object-cover w-[620px] h-[550px] rounded-[20px]"
         />
       </div>
       <div className="flex justify-between">
@@ -19,7 +20,7 @@ const NewArrivalCard = ({ photo, description }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default NewArrivalCard;
+export default YoungFavouriteCard

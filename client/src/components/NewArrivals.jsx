@@ -6,7 +6,6 @@ import NewArrivalCard from "./NewArrivalCard";
 
 const NewArrivals = () => {
   return (
-    // mx-16 my-12
     <div className="text-white w-full flex flex-col gap-12 my-12">
       <div className="ml-80 font-poppins font-bold text-4xl">
         <h1>NEW ARRIVALS</h1>

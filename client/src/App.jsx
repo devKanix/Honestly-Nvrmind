@@ -10,11 +10,12 @@ import SignUp from "./components/SignUp";
 import Categories from "./components/Categories";
 import Fashion from "./components/Fashion";
 import Products from "./components/Products";
+import YoungFavourite from "./components/YoungFavourite"
+import AppDownload from "./components/AppDownload";
 
 function App() {
   return (
     <Router>
-      
       <Routes>
         <Route path="/" element={
           <>
@@ -23,6 +24,8 @@ function App() {
             <HNStrip />
             <NewArrivals />
             <Creativity />
+            <YoungFavourite />
+            <AppDownload />
             <Footer />
           </>
         } />
