@@ -4,9 +4,9 @@
 body {
   margin: 0;
   background-color: black;
-  font-family: -apple-system, BlinkMacSystemFont, 'Dancing Script' 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif, serif 'poppins';
+    sans-serif, serif 'poppins' 'Dancing Script';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,6 +14,6 @@ body {
 code {
 
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace, 'poppins';
+    monospace, 'poppins' 'Dancing Script';
 
 }
