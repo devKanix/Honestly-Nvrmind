@@ -1,5 +1,5 @@
 import React from 'react'
-import { TshirtCanvas } from "./canvas/Tshirt";
+import { TshirtCanvas } from "./canvas/Tshirt-2";
 import {Link} from 'react-router-dom';
 
 export const Hero = () => {
