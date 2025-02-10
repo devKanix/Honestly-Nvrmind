@@ -28,8 +28,10 @@ const AppDownload = () => {
         </div>
       </div>
       <div className="flex justify-center w-[50%]">
-        <div className="flex justify-center items-center rounded-full bg-white w-[700px] h-[700px] ">
-        <img src={MobileApp} alt="mobile-app" />
+        <div className="relative flex justify-center items-center rounded-full bg-white w-[700px] h-[700px] ">
+        {/* <img src={MobileApp} alt="mobile-app" /> */}
+        <iframe src="https://embed.figma.com/proto/oRfnudavUkz3zAiUP2osOH/Mobile-App-PROTOTYPE-(Community)?node-id=219-0&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share" title="Mobile app" allow="encrypted-media;" className="w-[374px] h-[763px] border-none overflow-hidden"></iframe>
+        <div class="absolute bottom-[-33px] left-92 w-[374px] h-[50px] bg-black"></div>
         </div>
       </div>
     </div>
