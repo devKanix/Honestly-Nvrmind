@@ -15,7 +15,7 @@ export const Navbar = () => {
           onMouseLeave={() => setShowDropdown(false)}>
             CATEGORIES
             {showDropdown && (
-                <div className="absolute mt-2">
+                <div className="absolute mt-1">
                   <div className="absolute -top-2 left-4 w-0 h-0 
                     border-l-[8px] border-l-transparent 
                     border-b-[8px] border-b-white/30 
