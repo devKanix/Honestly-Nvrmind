@@ -35,9 +35,6 @@ export const Navbar = () => {
                 </div>
             )}
           </li>
-          <li className="transition-text duration-200 hover:text-yellow-300">
-            <Link to="fashion">FASHION</Link>
-          </li>
         </div>
         <div>
         <Link to="/signin">
