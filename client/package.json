@@ -12,7 +12,6 @@
     "client": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-figma-embed": "^1.0.1",
     "react-icons": "^5.4.0",
     "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1",
