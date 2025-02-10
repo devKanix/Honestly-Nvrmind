@@ -29,14 +29,7 @@ const AppDownload = () => {
       </div>
       <div className="flex justify-center w-[50%]">
         <div className="flex justify-center items-center rounded-full bg-white w-[700px] h-[700px] ">
-          <div className="rounded-3xl bg-slate-500 w-[35%] h-[70%]">
-          <iframe className="w-full h-full rounded-3xl"
-          src="https://embed.figma.com/proto/boKNiv9Tc75mLqyJfrQZ0t/Mobile-App-PROTOTYPE-(Community)?node-id=219-0&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
-           allowfullscreen
-           title="Mobile App">
-
-           </iframe>
-          </div>
+        <img src = {MobileApp} alt="MobileApp" className=""/>
         </div>
       </div>
     </div>
