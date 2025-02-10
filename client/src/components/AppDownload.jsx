@@ -28,8 +28,8 @@ const AppDownload = () => {
         </div>
       </div>
       <div className="flex justify-center w-[50%]">
-        <div className="relative flex justify-center items-center rounded-full bg-white w-[700px] h-[700px] ">
-        <img src={MobileApp} alt="mobile-app" />
+        <div className="flex justify-center items-center rounded-full bg-white w-[700px] h-[700px] ">
+        <img src={MobileApp} alt="mobile-app" className="w-[300px] h-[650px]" />
         </div>
       </div>
     </div>

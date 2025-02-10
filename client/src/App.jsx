@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollAnimation from "react-animate-on-scroll";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import HNStrip from "./components/HNStrip";
@@ -10,7 +11,7 @@ import SignUp from "./pages/SignUp";
 import Categories from "./components/Categories";
 import Fashion from "./pages/Fashion";
 import Products from "./pages/Products";
-import YoungFavourite from "./components/YoungFavourite"
+import YoungFavourite from "./components/YoungFavourite";
 import AppDownload from "./components/AppDownload";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
@@ -23,18 +24,35 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={
-          <>
-          <Navbar />
-            <Hero />
-            <HNStrip />
-            <NewArrivals />
-            <Creativity />
-            <YoungFavourite />
-            <AppDownload />
-            <Footer />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <ScrollAnimation animateIn="fadeIn">
+                <Hero />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
+                <HNStrip />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
+                <NewArrivals />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
+                <Creativity />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
+                <YoungFavourite />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
+                <AppDownload />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
+                <Footer />
+              </ScrollAnimation>
+            </>
+          }
+        />
         <Route path="/products" element={<Products />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/fashion" element={<Fashion />} />
