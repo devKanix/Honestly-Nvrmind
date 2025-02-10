@@ -1,13 +1,13 @@
-import Navbar from "../components/Navbar"
-import photo from "../Assets/front-2.png"
-import Footer from "../components/Footer"
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import photo from '../Assets/front-2.png'
 
-const Oversized = () => {
+const Special = () => {
   return (
     <><Navbar />
     <div className="flex flex-col justify-center items-center">
       <div className="w-[70%] mt-10">
-        <h1 className="text-white text-5xl font-bold">Oversized</h1>
+        <h1 className="text-white text-5xl font-bold">H-N Special</h1>
         <div className="text-white mt-5 font-semibold mb-10">
           <div className="font-poppins mt-3">
             <div>
@@ -36,4 +36,4 @@ const Oversized = () => {
   )
 }
 
-export default Oversized
+export default Special
