@@ -34,7 +34,6 @@ const AppDownload = () => {
           src="https://embed.figma.com/proto/boKNiv9Tc75mLqyJfrQZ0t/Mobile-App-PROTOTYPE-(Community)?node-id=219-0&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
            allowfullscreen
            title="Mobile App">
-
            </iframe>
           </div>
         </div>
