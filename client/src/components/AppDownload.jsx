@@ -29,6 +29,7 @@ const AppDownload = () => {
       </div>
       <div className="flex justify-center w-[50%]">
         <div className="flex justify-center items-center rounded-full bg-white w-[700px] h-[700px] ">
+        <img src={MobileApp} alt="mobile-app" />
         </div>
       </div>
     </div>
