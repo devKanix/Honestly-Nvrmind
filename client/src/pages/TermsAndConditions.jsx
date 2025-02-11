@@ -1,12 +1,10 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const TermsAndConditions = () => {
   return (
     <>
       <Navbar />
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2} delay={0} offset={50} animatePreScroll={false}>
       <div className="flex flex-col items-center justify-center mt-10">
         <h1 className="text-white text-5xl font-bold">Terms and Conditions</h1>
         <div className="w-[70%] h-[650px] bg-yellow-400 rounded-lg mt-10 p-4">
@@ -70,7 +68,6 @@ const TermsAndConditions = () => {
           <br></br>
         </div>
       </div>
-      </ScrollAnimation>
       <Footer />
     </>
   );

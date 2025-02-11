@@ -1,12 +1,10 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import photo from '../Assets/front-2.png'
-import ScrollAnimation from 'react-animate-on-scroll'
 
 const Compresive = () => {
   return (
     <><Navbar />
-    <ScrollAnimation animatePreScroll={false} duration={1} delay={0} offset={0} animateIn="fadeIn">
     <div className="flex flex-col justify-center items-center">
       <div className="w-[70%] mt-10">
         <h1 className="text-white text-5xl font-bold">Compresive</h1>
@@ -34,7 +32,6 @@ const Compresive = () => {
         </div>
       </div>
     </div>
-    </ScrollAnimation>
     <Footer /></>
   )
 }

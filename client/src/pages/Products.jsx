@@ -1,14 +1,12 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import photo from "../Assets/front-2.png";
-import ScrollAnimation from "react-animate-on-scroll";
 // import { FaArrowRightLong } from "react-icons/fa6";
 
 const Products = () => {
   return (
     <>
       <Navbar />
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2} delay={0} offset={50} animatePreScroll={false}>
       <div className="flex flex-col justify-center items-center">
         <div className="w-[70%] mt-10">
           <h1 className="text-white text-5xl font-bold">Products</h1>
@@ -36,7 +34,6 @@ const Products = () => {
           </div>
         </div>
       </div>
-      </ScrollAnimation>
       <Footer />
     </>
   );

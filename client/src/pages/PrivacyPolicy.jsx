@@ -1,12 +1,10 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const PrivacyPolicy = () => {
   return (
     <>
       <Navbar />
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2} delay={0} offset={50} animatePreScroll={false} >
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-5xl text-white font-bold mt-10">Privacy Policy</h1>
         <div className="w-[70%] h-[750px] bg-yellow-400 rounded-lg p-4 mt-10">
@@ -63,7 +61,6 @@ const PrivacyPolicy = () => {
           </p>
         </div>
       </div>
-      </ScrollAnimation>
       <Footer />
     </>
   );

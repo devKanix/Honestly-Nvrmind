@@ -31,24 +31,57 @@ function App() {
           path="/"
           element={
             <>
-              <Navbar />
+                <Navbar />
                 <Hero />
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0} >
                 <HNStrip />
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
+                <ScrollAnimation
+                animateIn="fadeIn"
+                animateOnce={true}
+                animatePreScroll={false}
+                duration={1}
+                delay={0}
+                offset={0}
+              >
                 <NewArrivals />
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
+                </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOnce={true}
+                animatePreScroll={false}
+                duration={1}
+                delay={0}
+                offset={0}
+              >
                 <Creativity />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOnce={true}
+                animatePreScroll={false}
+                duration={1}
+                delay={0}
+                offset={0}
+              >
                 <YoungFavourite />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOnce={true}
+                animatePreScroll={false}
+                duration={1}
+                delay={0}
+                offset={0}
+              >
                 <AppDownload />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOnce={true}
+                animatePreScroll={false}
+                duration={1}
+                delay={0}
+                offset={0}
+              >
                 <Footer />
               </ScrollAnimation>
             </>

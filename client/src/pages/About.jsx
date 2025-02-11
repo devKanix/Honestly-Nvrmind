@@ -1,13 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <ScrollAnimation animatePreScroll={false} duration={1} delay={0} offset={0} animateIn="fadeIn">
       <div className="flex flex-col justify-center items-center mt-10">
         <h1 className="text-white text-5xl font-bold">About Us</h1>
         <div className="w-[70%] h-[500px] mt-10 bg-yellow-400 p-4 rounded-lg">
@@ -55,7 +53,6 @@ const About = () => {
           </p>
         </div>
       </div>
-      </ScrollAnimation>
       <Footer />
     </>
   );
