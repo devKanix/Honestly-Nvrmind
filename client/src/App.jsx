@@ -20,6 +20,10 @@ import Location from "./pages/Location";
 import Tracking from "./pages/Tracking";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PreLoader from "./components/PreLoader";
+import Oversized from "./pages/Oversized";
+import Special from "./pages/Special";
+import Compresive from "./pages/Compresive";
 
 function App() {
     const [loading, setLoading] = useState(true);
