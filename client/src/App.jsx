@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import Hero from "./components/Hero";
@@ -22,8 +23,20 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Oversized from "./pages/Oversized";
 import Special from "./pages/Special";
 import Compresive from "./pages/Compresive";
+import PreLoader from "./components/PreLoader";
 
 function App() {
+    const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
+
+  if (loading) {
+    return <PreLoader />;
+  }
   return (
     <Router>
       <Routes>
@@ -32,16 +45,12 @@ function App() {
           element={
             <>
               <Navbar />
-              <ScrollAnimation animateIn="fadeIn">
                 <Hero />
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
                 <HNStrip />
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn"> 
                 <NewArrivals />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" >
                 <Creativity />
               </ScrollAnimation>
               <ScrollAnimation animateIn="fadeIn">
