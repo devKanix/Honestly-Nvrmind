@@ -20,10 +20,6 @@ import Location from "./pages/Location";
 import Tracking from "./pages/Tracking";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Oversized from "./pages/Oversized";
-import Special from "./pages/Special";
-import Compresive from "./pages/Compresive";
-import PreLoader from "./components/PreLoader";
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -45,21 +41,44 @@ function App() {
           element={
             <>
               <Navbar />
+              <ScrollAnimation animateIn="fadeIn">
                 <Hero />
                 <HNStrip />
-              <ScrollAnimation animateIn="fadeIn"> 
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
                 <NewArrivals />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" >
+              <ScrollAnimation animateIn="fadeIn">
                 <Creativity />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOnce={true}
+                animatePreScroll={false}
+                duration={1}
+                delay={0}
+                offset={0}
+              >
                 <YoungFavourite />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOnce={true}
+                animatePreScroll={false}
+                duration={1}
+                delay={0}
+                offset={0}
+              >
                 <AppDownload />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOnce={true}
+                animatePreScroll={false}
+                duration={1}
+                delay={0}
+                offset={0}
+              >
                 <Footer />
               </ScrollAnimation>
             </>

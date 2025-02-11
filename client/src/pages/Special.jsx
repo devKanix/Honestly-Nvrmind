@@ -4,7 +4,12 @@ import photo from '../Assets/front-2.png'
 
 const Special = () => {
   return (
+<<<<<<< HEAD
     <><Navbar />
+=======
+    <>
+    <Navbar />
+>>>>>>> 8ed306100c01032b6d031bd0ee1344b7ba02273b
     <div className="flex flex-col justify-center items-center">
       <div className="w-[70%] mt-10">
         <h1 className="text-white text-5xl font-bold">H-N Special</h1>
@@ -32,7 +37,12 @@ const Special = () => {
         </div>
       </div>
     </div>
+<<<<<<< HEAD
     <Footer /></>
+=======
+    <Footer />
+    </>
+>>>>>>> 8ed306100c01032b6d031bd0ee1344b7ba02273b
   )
 }
 

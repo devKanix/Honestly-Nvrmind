@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -10,44 +10,58 @@ export const Navbar = () => {
       </h1>
       <div className="flex gap-2 sm:gap-9 mt-5">
         <div className="flex text-xs sm:text-lg text-white list-none gap-2 sm:gap-9 mt-2 sm:mt-0.5 ">
-          <li className="transition-text duration-200 hover:text-yellow-300 cursor-pointer"
-          onMouseEnter={() => setShowDropdown(true)}
-          onMouseLeave={() => setShowDropdown(false)}>
+          <li
+            className="transition-text duration-200 hover:text-yellow-300 cursor-pointer"
+            onMouseEnter={() => setShowDropdown(true)}
+            onMouseLeave={() => setShowDropdown(false)}
+          >
             CATEGORIES
             {showDropdown && (
-                <div className="absolute mt-1">
-                  <div className="absolute -top-2 left-4 w-0 h-0 
+              <div className="absolute mt-1">
+                <div
+                  className="absolute -top-2 left-4 w-0 h-0 
                     border-l-[8px] border-l-transparent 
                     border-b-[8px] border-b-white/30 
-                    border-r-[8px] border-r-transparent">
-                  </div>
-                  <ul className="backdrop-blur-md bg-white/30 w-[100px] p-1 rounded-lg">
-                    <li className="text-white transition-text duration-200 hover:text-yellow-400">
-                      <Link to="mens">Mens</Link>
-                    </li>
-                    <li className="text-white transition-text duration-200 hover:text-yellow-400">
-                      <Link to="womens">Womens</Link>
-                    </li>
-                    <li className="text-white transition-text duration-200 hover:text-yellow-400">
-                      <Link to="kids">Kids</Link>
-                    </li>
-                  </ul>
-                </div>
+                    border-r-[8px] border-r-transparent"
+                ></div>
+                <ul className="backdrop-blur-md bg-white/30 w-[100px] p-1 rounded-lg">
+                  <li className="text-white transition-text duration-200 hover:text-yellow-400">
+                    <Link to="mens">Mens</Link>
+                  </li>
+                  <li className="text-white transition-text duration-200 hover:text-yellow-400">
+                    <Link to="womens">Womens</Link>
+                  </li>
+                  <li className="text-white transition-text duration-200 hover:text-yellow-400">
+                    <Link to="kids">Kids</Link>
+                  </li>
+                </ul>
+              </div>
             )}
           </li>
         </div>
         <div>
-        <Link to="/signin">
-          <button className="bg-white text-xs w-20 rounded h-7 transition-bg duration-200 hover:bg-yellow-300">
-          SIGN IN
-          </button>
+          <Link to="/signin">
+            <button className="bg-white text-xs w-20 rounded h-7 transition-bg duration-200 hover:bg-yellow-300">
+              SIGN IN
+            </button>
           </Link>
         </div>
         <div>
-        <Link to="/signup">
-          <button className="bg-white text-xs w-20 rounded h-7 transition-bg duration-200 hover:bg-yellow-300">
-          SIGN UP
-          </button>
+          <Link to="/signup">
+            <button className="bg-white text-xs w-20 rounded h-7 transition-bg duration-200 hover:bg-yellow-300">
+              SIGN UP
+            </button>
+          </Link>
+        </div>
+        <div>
+          <Link to="/cart">
+            <button className="flex justify-center items-center bg-white w-10 rounded h-7 transition-bg duration-200 hover:bg-yellow-300 hover:w-14">
+              <img
+                src="https://img.icons8.com/ios/50/000000/shopping-cart.png"
+                className="w-5 h-5"
+                alt="cart"
+              />
+            </button>
           </Link>
         </div>
       </div>
