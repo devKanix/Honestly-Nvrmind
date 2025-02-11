@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const ContactUs = () => {
   return (
+    <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2} delay={0} offset={50} animatePreScroll={false} >
     <div className="flex items-center justify-center h-screen ">
             <div className="flex h-[500px] bg-yellow-400">
               <div className="w-[500px] h-full bg-white flex flex-col items-center justify-center">
@@ -76,6 +78,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
+          </ScrollAnimation>
   )
 }
 

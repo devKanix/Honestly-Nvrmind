@@ -1,10 +1,13 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import photo from '../Assets/front-2.png'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Special = () => {
   return (
-    <><Navbar />
+    <>
+    <Navbar />
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2} delay={0} offset={50} animatePreScroll={false}>
     <div className="flex flex-col justify-center items-center">
       <div className="w-[70%] mt-10">
         <h1 className="text-white text-5xl font-bold">H-N Special</h1>
@@ -32,7 +35,9 @@ const Special = () => {
         </div>
       </div>
     </div>
-    <Footer /></>
+    </ScrollAnimation>
+    <Footer />
+    </>
   )
 }
 

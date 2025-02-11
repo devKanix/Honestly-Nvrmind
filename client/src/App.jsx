@@ -32,25 +32,23 @@ function App() {
           element={
             <>
               <Navbar />
-              <ScrollAnimation animateIn="fadeIn">
                 <Hero />
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0} >
                 <HNStrip />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
                 <NewArrivals />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
                 <Creativity />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
                 <YoungFavourite />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
                 <AppDownload />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false} duration={1} delay={0} offset={0}>
                 <Footer />
               </ScrollAnimation>
             </>

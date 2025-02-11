@@ -1,10 +1,12 @@
 import Navbar from "../components/Navbar"
 import photo from "../Assets/front-2.png"
 import Footer from "../components/Footer"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const Oversized = () => {
   return (
     <><Navbar />
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2} delay={0} offset={50} animatePreScroll={false} >
     <div className="flex flex-col justify-center items-center">
       <div className="w-[70%] mt-10">
         <h1 className="text-white text-5xl font-bold">Oversized</h1>
@@ -32,6 +34,7 @@ const Oversized = () => {
         </div>
       </div>
     </div>
+    </ScrollAnimation>
     <Footer /></>
   )
 }
