@@ -19,6 +19,9 @@ import Location from "./pages/Location";
 import Tracking from "./pages/Tracking";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Oversized from "./pages/Oversized";
+import Special from "./pages/Special";
+import Compresive from "./pages/Compresive";
 
 function App() {
   return (
@@ -64,6 +67,9 @@ function App() {
         <Route path="/tracking" element={<Tracking />} />
         <Route path="/termsandconditions" element={<TermsAndConditions />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/oversized" element={<Oversized />} />
+        <Route path="/special" element={<Special />} />
+        <Route path="/compresive" element={<Compresive />} />
       </Routes>
     </Router>
   );
