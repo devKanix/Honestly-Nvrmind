@@ -26,7 +26,7 @@ import Special from "./pages/Special";
 import Compresive from "./pages/Compresive";
 
 function App() {
-    const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -45,14 +45,14 @@ function App() {
           element={
             <>
               <Navbar />
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                 <Hero />
                 <HNStrip />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                 <NewArrivals />
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                 <Creativity />
               </ScrollAnimation>
               <ScrollAnimation
