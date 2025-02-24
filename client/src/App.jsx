@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import HNStrip from "./components/HNStrip";
@@ -45,46 +44,13 @@ function App() {
           element={
             <>
               <Navbar />
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                 <Hero />
                 <HNStrip />
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                 <NewArrivals />
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                 <Creativity />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeIn"
-                animateOnce={true}
-                animatePreScroll={false}
-                duration={1}
-                delay={0}
-                offset={0}
-              >
                 <YoungFavourite />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeIn"
-                animateOnce={true}
-                animatePreScroll={false}
-                duration={1}
-                delay={0}
-                offset={0}
-              >
                 <AppDownload />
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeIn"
-                animateOnce={true}
-                animatePreScroll={false}
-                duration={1}
-                delay={0}
-                offset={0}
-              >
                 <Footer />
-              </ScrollAnimation>
             </>
           }
         />
