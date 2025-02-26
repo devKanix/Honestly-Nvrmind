@@ -21,16 +21,9 @@ const userSchema = new mongoose.Schema({
         required: true
     },
 
-    googleId: { 
-        type: String, 
-        unique: true, 
-        sparse: true
-    },
-
-    githubId: { 
-        type: String, 
-        unique: true, 
-        sparse: true
+    phoneNumber: {
+        type: Number,
+        required: true
     }
 }, {timestamps: true});
 

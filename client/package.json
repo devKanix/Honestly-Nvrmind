@@ -10,6 +10,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "client": "file:",
+    "concurrently": "^9.1.2",
     "react": "^18.3.1",
     "react-animate-on-scroll": "^2.1.9",
     "react-dom": "^18.3.1",
@@ -23,10 +24,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "cd Backend && npm start",
+    "start": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"react-scripts start\" \"cd ../Backend && npm start\""
   },
   "eslintConfig": {
     "extends": [

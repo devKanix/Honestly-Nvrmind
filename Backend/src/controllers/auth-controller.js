@@ -8,11 +8,13 @@ const signUp = async(req, res) => {
         const reqData = {
             email: req.body.email,
             password: req.body.password,
+            name: req.body.name,
+            phoneNumber: req.body.phoneNumber
         }
-        if(!reqData.email || !reqData.password) {
+        if(!reqData.email || !reqData.password || !reqData.name || !reqData.phoneNumber) {
             return res.status(StatusCodes.BAD_REQUEST).json({
                 success: false,
-                message: "Name, email, Password must be provided for a User Creation."
+                message: "Name, email, Password, Phone Number must be provided for a User Creation."
             });
         }
         const newUser = await userService.signUp(reqData);

@@ -43,13 +43,3 @@ export const isAuthenticated = (req, res, next) => {
         });
     }
 }
-
-export const isOAuthAuthenticated = (req, res, next) => {
-    if (!req.user) {
-        return res.status(StatusCodes.UNAUTHORIZED).json({
-            success: false,
-            message: "Unauthorized access..",
-        });
-    }
-    next();
-};
