@@ -26,8 +26,8 @@ const SignIN = () => {
     <>
       {" "}
       <div className="flex items-center justify-center h-screen ">
-        <div className="flex h-[500px] bg-yellow-400">
-          <div className="w-[500px] h-full bg-white flex flex-col items-center justify-center">
+        <div className="flex h-[500px] bg-yellow-400 rounded-lg">
+          <div className="w-[500px] h-full bg-white rounded-lg flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold text-black">
               <Link to="/">Honestly-Nvrmind</Link>
             </h1>
