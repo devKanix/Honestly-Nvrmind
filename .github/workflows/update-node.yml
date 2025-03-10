@@ -1,44 +1,29 @@
 name: Auto Update Node.js
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: '0 0 * * 1'  # Runs every Monday at midnight UTC
-  workflow_dispatch:  # Allows manual triggering
+    - cron: '0 0 * * *'
 
 jobs:
   update-node:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Fetch Latest Node.js Version
-        id: node_version
+      - name: Get latest Node.js version
         run: |
           latest_version=$(curl -s https://nodejs.org/dist/index.json | jq -r '.[0].version')
           echo "LATEST_VERSION=$latest_version" >> $GITHUB_ENV
 
-      - name: Update Node.js Version in .nvmrc (Frontend, Backend)
+      - name: Create directories if they don't exist
         run: |
-          for dir in client backend; do
-            if [ -d "$dir" ]; then
-              echo "$LATEST_VERSION" > "$dir/.nvmrc"
-            fi
-          done
+          mkdir -p client backend
 
-      - name: Update Node.js Version in package.json (Frontend, Backend, Server)
+      - name: Update .nvmrc files
         run: |
-          for dir in client backend server; do
-            if [ -f "$dir/package.json" ]; then
-              sed -i "s/\"node\": \".*\"/\"node\": \"$LATEST_VERSION\"/" "$dir/package.json"
-            fi
-          done
-
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions@users.noreply.github.com"
-          git add client/.nvmrc backend/.nvmrc server/.nvmrc
-          git add client/package.json backend/package.json server/package.json
-          git commit -m "Updated Node.js version to $LATEST_VERSION in frontend, backend, and server"
-          git push
+          echo "$LATEST_VERSION" > client/.nvmrc
+          echo "$LATEST_VERSION" > backend/.nvmrc
