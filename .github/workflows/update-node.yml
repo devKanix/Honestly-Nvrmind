@@ -18,15 +18,17 @@ jobs:
           latest_version=$(curl -s https://nodejs.org/dist/index.json | jq -r '.[0].version')
           echo "LATEST_VERSION=$latest_version" >> $GITHUB_ENV
 
-      - name: Update Node.js Version in .nvmrc (Frontend, Backend, Server)
+      - name: Update Node.js Version in .nvmrc (Frontend, Backend)
         run: |
-          echo "$LATEST_VERSION" > client/.nvmrc
-          echo "$LATEST_VERSION" > Backend/.nvmrc
-          echo "$LATEST_VERSION" > server/.nvmrc
+          for dir in client backend; do
+            if [ -d "$dir" ]; then
+              echo "$LATEST_VERSION" > "$dir/.nvmrc"
+            fi
+          done
 
       - name: Update Node.js Version in package.json (Frontend, Backend, Server)
         run: |
-          for dir in client Backend server; do
+          for dir in client backend server; do
             if [ -f "$dir/package.json" ]; then
               sed -i "s/\"node\": \".*\"/\"node\": \"$LATEST_VERSION\"/" "$dir/package.json"
             fi
@@ -38,5 +40,5 @@ jobs:
           git config --global user.email "github-actions@users.noreply.github.com"
           git add client/.nvmrc backend/.nvmrc server/.nvmrc
           git add client/package.json backend/package.json server/package.json
-          git commit -m "Updated Node.js version to $LATEST_VERSION in frontend, Backend, and server"
+          git commit -m "Updated Node.js version to $LATEST_VERSION in frontend, backend, and server"
           git push
